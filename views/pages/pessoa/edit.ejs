@@ -2,7 +2,7 @@
 Este é o arquivo
 ./views/pages/pessoa/edit.ejs
 -->
-<h1>Editar Pessoa</h1>
+<h1>Editar usuario</h1>
 <form action="/pessoa/save" method="POST">
   <input type="hidden" name="id"
     value="<%= pessoa.id %>"/>
@@ -10,19 +10,6 @@ Este é o arquivo
     placeholder="Digite o nome"
     value="<%= pessoa.nome %>" />
   <br/>
-  <input type="text" name="sobrenome"
-    placeholder="Digite o sobrenome"
-    value="<%= pessoa.sobrenome %>"/>
-  <br/>
-  <select name="sexo">
-    <option value="">Selecione o sexo</option>
-    <option value="F">Feminino</option>
-    <option value="M">Masculino</option>
-  </select>
-  <script>
-    document.getElementsByName("sexo")[0].value = 
-        "<%= pessoa.sexo %>";
-  </script>
-  <br/>
+  
   <input type="submit" value="Salvar"/>
 </form>
