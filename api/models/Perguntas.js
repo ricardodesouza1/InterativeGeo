@@ -14,23 +14,39 @@ module.exports = {
     perguntas: {
       type:"string", 
       required:true,
-      minLength: 2
+      minLength: 2,
+      maxLength: 255
     },
     alternativaA: {
-	
+	   type:"string",
+       required:true,
+       minLength: 2,
+       maxLength: 255
 
     },
     alternativaB: {
+       type:"string",
+       required:true,
+       minLength: 2,
+       maxLength: 255
 
     },
     alternativaC: {
-
+       type:"string",
+       required:true,
+       minLength: 2,
+       maxLength: 255
     },
     alternativaD: {
+       type:"string",
+       required:true,
+       minLength: 2,
+       maxLength: 255
 
     },
-    alternativaCoreta: {
-
+    resposta: {
+        type:"number"
+        required:true;
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

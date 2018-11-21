@@ -11,7 +11,12 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    resultado: {
+    nacertos: {
+      type:"number", 
+      required:true
+
+    },
+    nerros: {
       type:"number", 
       required:true
 
