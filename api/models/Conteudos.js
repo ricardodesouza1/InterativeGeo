@@ -15,7 +15,8 @@ module.exports = {
       type:"string", 
       required:true,
       minLength: 2,
-      maxLength:
+      maxLength: 255,
+      
     },
    
 
