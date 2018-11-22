@@ -68,7 +68,7 @@ module.exports = {
             );
         } else { // Não Salvou!
             res.redirect(
-              "/perguntas?notice=Erro!"
+              "/perguntas?notice=Erro!"+err
             );
         }
       });
