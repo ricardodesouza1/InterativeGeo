@@ -45,8 +45,11 @@ module.exports = {
 
     },
     resposta: {
-        type:"number"
-        required:true;
+       type:"string",
+       required:true,
+       minLength: 2,
+       maxLength: 255
+
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
