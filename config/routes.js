@@ -48,6 +48,18 @@ module.exports.routes = {
   'GET /pessoa/edit/:id':
         { action: "pessoa/edit" },
 
+  'GET /perguntas':      
+        { action: "perguntas/index" },
+  'GET /perguntas/new':
+        {action: "perguntas/new"},
+  'POST /perguntas/save':
+        { action: "perguntas/saveOrUpdate"},
+  'GET /perguntas/delete/:id':
+        { action: "perguntas/delete" },
+  'GET /perguntas/edit/:id':
+        { action: "perguntas/edit" },
+  
+
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝

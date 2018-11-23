@@ -1,0 +1,48 @@
+<!--
+Este é o arquivo
+./views/pages/peguntas/new.ejs
+-->
+<DOCTÝPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+  <style>
+  body{
+    background: blue;
+
+  }
+
+  </style>
+</head>
+<body>
+<center>
+<h1>Nova Perguntas a ser cadastrada</h1>
+<form action="/perguntas/save" method="POST">
+  <input type="text" name="perguntas"
+    placeholder="Digite a Perguntas" />
+  <br/>
+  <br/>
+  <input type="text" name="alternativaA"
+    placeholder="Digite a alternativa A" />
+  <br/>
+  <br/>
+  <input type="text" name="alternativaB"
+    placeholder="Digite a alternativa B" />
+  <br/>
+  <br/>
+  <input type="text" name="alternativaC"
+    placeholder="Digite a alternativa C" />
+  <br/>
+  <br/>
+  <input type="text" name="alternativaD"
+    placeholder="Digite a alternativa D" />
+  <br/>
+  <br/>
+  <input type="text" name="resposta" placeholder="informe alternativa correta"/>
+   <br/>
+   <br/>
+  <input type="submit" value="Salvar"/>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+Este é o arquivo
+./views/pages/perguntas/index.ejs
+-->
+<center>
+<h1>Listagem de Perguntas</h1>
+<table border=1 cellspacing=0 cellpadding=2 bordercolor="666633">
+  <tr>
+    <th>Pergunta</th>
+    <th>Alternativa a</th>
+    <th>Alternativa b</th>
+    <th>Alternativa c</th>
+    <th>Alternativa d</th>
+    <th>Resposta</th>
+    <th>editar</th>
+    <th>remover</th>
+
+  </tr>
+  <% for (i = 0; i< perguntas.length; i++) { %>
+  <tr>
+    <td><%= perguntas[i].perguntas %> </td> 
+    <td><%= perguntas[i].alternativaA %> </td>
+    <td><%= perguntas[i].alternativaB %> </td>
+    <td><%= perguntas[i].alternativaC %> </td>
+    <td><%= perguntas[i].alternativaD %> </td>
+    <td><%= perguntas[i].resposta %> </td>
+    
+    <td><a href="/perguntas/edit/<%= perguntas[i].id %>">Editar</a></td>
+     
+      <td><a href="/perguntas/delete/<%= perguntas[i].id %>" 
+          onclick="return confirm('Deseja realmente excluir?')">
+      Remover</a>
+      
+    </td>
+  </tr>
+  <% } %>
+</table>
+ <a href="/perguntas/new/">Inserir outra pessoa</a>
+</center>

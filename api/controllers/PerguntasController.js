@@ -1,5 +1,5 @@
 /**
- * PessoaController
+ * PerguntasController
  *
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
@@ -7,63 +7,68 @@
 
 module.exports = {
   index: function(req, res) {
-    Pessoa.find().then(function(data) {
-      res.view("pages/pessoa/index",
+    Perguntas.find().then(function(data) {
+      res.view("pages/perguntas/index",
         {
           notice: req.param("notice"),
-          pessoas: data
+          perguntas: data
         });
     });
   },
   new: function(req, res) {
-    res.view("pages/pessoa/new");
+    res.view("pages/perguntas/new");
   },
   edit: async function(req, res) {
     var pkid = parseInt(req.param('id'))
     if (pkid && !isNaN(pkid)) {
-        var p = await Pessoa.findOne({
+        var p = await Perguntas.findOne({
             id: pkid
         });
         if (p) {
-          res.view("pages/pessoa/edit", {
-            pessoa: p
+          res.view("pages/perguntas/edit", {
+            perguntas: p
           });
         } else {
-          res.redirect("/pessoa?notice=Erro.");
+          res.redirect("/perguntas?notice=Erro.");
         }
     } else {
-        res.redirect("/pessoa?notice=Não encontrado.");
+        res.redirect("/perguntas?notice=Não encontrado.");
     }
   },
   saveOrUpdate: function(req, res) {
     var pkid = parseInt(req.param("id"));
     var model = {
-      nome: req.param("nome")
+      perguntas: req.param("perguntas"),
+      alternativaA: req.param("alternativaA"),
+      alternativaB: req.param("alternativaB"),
+      alternativaC: req.param("alternativaC"),
+      alternativaD: req.param("alternativaD"),
+      resposta: req.param("resposta")
     }
     if (pkid > 0) {
-      Pessoa.update({
+      Perguntas.update({
           id: pkid
         }, model).exec(function(err, newmodel) {
           if (!err) {
             res.redirect(
-              "/pessoa?notice=Salvo com sucesso!"
+              "/perguntas?notice=Salvo com sucesso!"
             );
           } else { // Não Salvou!
             res.redirect(
-              "/pessoa?notice=Erro!"
+              "/perguntas?notice=Erro!"
             );
           }
       });
     } else {
-      Pessoa.create(model).exec(function(err, newmodel) {
+      Perguntas.create(model).exec(function(err, newmodel) {
         if (!err) { // Salvou!
           console.log(newmodel);
             res.redirect(
-              "/pessoa?notice=Salvo com sucesso!"
+              "/perguntas?notice=Salvo com sucesso!"
             );
-        } else { // Não Salvou!
+        } else { // Não Salvou!!
             res.redirect(
-              "/pessoa?notice=Erro!"
+              "/perguntas?notice=Erro!"+err
             );
         }
       });
@@ -72,19 +77,18 @@ module.exports = {
   delete: function(req, res) {
     var pkid = parseInt(req.param('id'))
     if (pkid && !isNaN(pkid)) {
-        Pessoa.destroy({
+        Perguntas.destroy({
             id: pkid
         }).exec(function(err) {
             if (!err) {
-              res.redirect("/pessoa?notice=Removido.");
+              res.redirect("/perguntas?notice=Removido.");
             } else {
-              res.redirect("/pessoa?notice=Erro.");
+              res.redirect("/perguntas?notice=Erro.");
             }
         });
     } else {
-        res.redirect("/pessoa?notice=Não encontrado.");
+        res.redirect("/perguntas?notice=Não encontrado.");
     }
   }
 
 };
-

@@ -2,6 +2,7 @@
 Este é o arquivo
 ./views/pages/pessoa/index.ejs
 -->
+<<<<<<< HEAD
 <h1>Listagem de usuarios</h1>
 <table>
   <tr>
@@ -14,9 +15,29 @@ Este é o arquivo
     <td>
       <a href="/pessoa/edit/<%= pessoas[i].id %>">Editar</a>
       <a href="/pessoa/delete/<%= pessoas[i].id %>" 
+=======
+<center>
+<h1>Listagem de Pessoas</h1>
+<table border=1 cellspacing=0 cellpadding=2 bordercolor="666633">
+  <tr>
+    <th>Nome</th>
+    <th>Ação editar</th>
+    <th>Ação remover</th>
+  </tr>
+  <% for (i = 0; i< pessoas.length; i++) { %>
+  <tr>
+    <td><%= pessoas[i].nome %> </td> 
+    
+    <td><a href="/pessoa/edit/<%= pessoas[i].id %>">Editar</a></td>
+     
+      <td><a href="/pessoa/delete/<%= pessoas[i].id %>" 
+>>>>>>> 6cdbe2a45cc300fbfd3628e68f51f2d858cf5492
           onclick="return confirm('Deseja realmente excluir?')">
       Remover</a>
+      
     </td>
   </tr>
   <% } %>
 </table>
+ <a href="/pessoa/new/">Inserir outra pessoa</a>
+</center>

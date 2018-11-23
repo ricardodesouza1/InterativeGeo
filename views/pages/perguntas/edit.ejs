@@ -1,0 +1,37 @@
+!--
+Este é o arquivo
+./views/pages/perguntas/edit.ejs
+-->
+<center>
+<h1>Editar Pessoa</h1>
+<form action="/perguntas/save" method="POST">
+  <input type="hidden" name="id"
+    value="<%= perguntas.id %>"/>
+  <input type="text" name="perguntas"
+    placeholder="Informe a pergunta"
+    value="<%= pessoa.perguntas %>" />
+  <br/>
+  <input type="text" name="alternativaA"
+    placeholder="alterntiva A"
+    value="<%= pessoa.alternativaA %>"/>
+  <br/>
+  <input type="text" name="alternativaB"
+    placeholder="alterntiva B"
+    value="<%= pessoa.alternativab %>"/>
+  <br/>
+  <input type="text" name="alternativaC"
+    placeholder="alterntiva C"
+    value="<%= pessoa.alternativaC %>"/>
+  <br/>
+  <input type="text" name="alternativaD"
+    placeholder="alterntiva D"
+    value="<%= pessoa.alternativaD %>"/>
+  <br/>
+  <input type="text" name="resposta"
+    placeholder="resposta"
+    value="<%= pessoa.resposta %>"/>
+  <br/>
+  
+  <input type="submit" value="Salvar"/>
+</form>
+<center>
