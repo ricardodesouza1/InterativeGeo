@@ -48,8 +48,8 @@ module.exports.routes = {
   'GET /pessoa/edit/:id':
         { action: "pessoa/edit" },
 
-<<<<<<< HEAD
-=======
+
+
   'GET /perguntas':      
         { action: "perguntas/index" },
   'GET /perguntas/new':
@@ -61,7 +61,7 @@ module.exports.routes = {
   'GET /perguntas/edit/:id':
         { action: "perguntas/edit" },
   
->>>>>>> 6cdbe2a45cc300fbfd3628e68f51f2d858cf5492
+
 
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
