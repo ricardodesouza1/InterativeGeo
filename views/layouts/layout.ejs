@@ -19,6 +19,7 @@
     <!--STYLES-->
     <link rel="stylesheet" href="/dependencies/bootstrap-4/bootstrap-4.css">
     <link rel="stylesheet" href="/dependencies/font-awesome-4/css/font-awesome.css">
+    <link rel="stylesheet" href="/styles/estilo.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
@@ -29,7 +30,7 @@
         <a class="navbar-brand mr-0" href="/">NEW_APP_NAME</a>
         <div class="navbar-nav flex-row">
           <!-- LOGGED-IN NAVIGATION -->
-          <% if(me) { %>
+          <% if(me) { %> 
           <a class="nav-item nav-link ml-2 ml-md-0 mr-2 mr-md-0" href="/contact">Help</a>
           <!-- Only in desktop nav -->
           <div class="nav-item dropdown d-none d-sm-block">
@@ -42,7 +43,7 @@
           <!-- Only in mobile nav -->
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/account">Account Settings</a>
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/logout">Sign out</a>
-          <% } else { %>
+         <% } else { %> 
           <!-- LOGGED-OUT NAVIGATION -->
           <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/faq">FAQ</a>
           <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/login">Log in</a>
@@ -52,7 +53,7 @@
           </div>
           <!-- Only in mobile nav -->
           <a class="nav-item nav-link text-info ml-2 d-block d-md-none" href="/signup">Sign up</a>
-          <% } %>
+          <% } %> 
         </div>
       </header>
 

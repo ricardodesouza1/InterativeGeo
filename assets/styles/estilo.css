@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body{
+   /*background-image: url("../imagens/geografiac.jpeg");*/
+    background-color: rgba(148, 170, 206, 0.5);
+   
+  
+}
+p {
+                text-align: justify;
+                text-indent: 50px;    
+            }
+/*tela login*/
+#usuario{
+    width: 350px;
+    height: 300px;
+     /*background-image:linear-gradient(#11B414,#133163);*/
+background-color: rgba(51, 20, 29, 0.4);
+ margin-top: 100px;
+    font-size: 16pt;
+    padding: 40px;
+    border-width: 6px;
+  border-style: ridge;
+  border-color: #689b9e;
+  border-right-width: 10px;
+}
+#nomet{
+    color: #13383a;
+}
+
+div{
+    /*text-align-last: center;*/
+    
+}
+#nome{
+    width: 250px;
+    height: 40px;
+    font-size: 14pt;
+    text-align: center;
+}
+#mapa{
+    
+    width: 700px;
+    height: 600px;
+    background: greenyellow;
+}
+/* botão */
+#iniciar{
+    
+}
+/*tela inicial*/
+#opcoes{
+     width: 650px;
+    height: 400px;
+    background-image:linear-gradient(#11B414,#133163);
+    margin-top: 70px;
+    font-size: 12pt;
+    padding: 40px;
+    box-shadow: 3px 3px 3px 3px black;
+    
+}
+.bt{
+    width: 180px;
+    height: 105px;
+}
+
+#esf{
+    text-align: center;
+}
+#regiao{
+    background-image: url("../imagens/regioes.jpg");
+}
+/*tela região norte*/
+#norte{
+    
+    background-image: url("../imagens/relevob.jpg");
+}
+#nor{
+    
+    width: 800px;
+    margin: auto;
+    font-size: 14pt;
+    padding: 40px;
+    background-image:linear-gradient(#11B414,#133163);
+    box-shadow: 3px 3px 3px 3px black;
+    background: rgba(162, 205, 90, 0.9);
+        
+}
+.legenda{
+    text-align: center;
+    font-family: serif;
+    font-size: 10pt;
+}
+#norteClima{
+    background-image: url("../imagens/clima1.jpg");
+}
+#nortevegetacao{
+     background-image: url("../imagens/vegetavv.jpg");
+}
+#nortees{
+    background-image: url("../imagens/regiao_nortees.jpg");
+}
