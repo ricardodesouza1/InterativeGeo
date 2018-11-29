@@ -12,9 +12,23 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     gabarito: {
-      type:"number", 
-      required:true
+       type:"string",
+       required:true,
+       minLength: 2,
+       maxLength: 255
+
+
     },
+    pergunta_id: {
+      type: "integer",
+      required: true
+    },
+    resultado_id: {
+      type: "integer",
+      required: true
+    }
+
+
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

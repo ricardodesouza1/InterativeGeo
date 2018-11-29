@@ -47,8 +47,8 @@ module.exports = {
     resposta: {
        type:"string",
        required:true,
-       minLength: 2,
-       maxLength: 255
+      // minLength: 1,
+      // maxLength: 255
 
     },
 

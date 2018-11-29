@@ -49,7 +49,7 @@ module.exports = {
           if (!err) {
             res.redirect(
               "/pessoa?notice=Salvo com sucesso!"
-            );
+            );  
           } else { // Não Salvou!
             res.redirect(
               "/pessoa?notice=Erro!"
