@@ -59,9 +59,7 @@ module.exports.routes = {
   'GET /perguntas/edit/:id':
         { action: "perguntas/edit" },
   
-  'GET /usuario':      
-        { action: "usuario/interativegeo/assets" },
-
+  
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
