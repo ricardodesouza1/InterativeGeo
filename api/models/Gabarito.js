@@ -20,11 +20,11 @@ module.exports = {
 
     },
     pergunta_id: {
-      type: "integer",
+      type: "number",
       required: true
     },
     resultado_id: {
-      type: "integer",
+      type: "number",
       required: true
     }
 

@@ -15,6 +15,18 @@ module.exports = {
         });
     });
   },
+  questionario: function(req, res) {
+    Perguntas.find().then(function(data) {
+      res.view("pages/perguntas/questionario",
+        {
+          notice: req.param("notice"),
+          perguntas: data
+        });
+    });
+  },
+  login: function(req, res) {
+    res.view("pages/perguntas/login");
+  },
   new: function(req, res) {
     res.view("pages/perguntas/new");
   },
