@@ -74,7 +74,8 @@ div{
 }
 #nor{
     
-    width: 800px;
+     width: 700px;
+    height: 600px;
     margin: auto;
     font-size: 14pt;
     padding: 40px;
@@ -96,4 +97,42 @@ div{
 }
 #nortees{
     background-image: url("../imagens/regiao_nortees.jpg");
+}
+/*Questionário da aplicação*/
+#questionario{
+    width: 700px;
+    height: 600px;
+    border: solid;
+    border-color: black;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+h1{
+    text-align-last: center;
+}
+.rolagem{
+    overflow:scroll;
+    height:80px;
+    width:100%;
+    overflow:auto;
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #dddddd; 
+    }
+ 
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 20px; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #5d5e60;
+    }
 }
