@@ -61,12 +61,7 @@ module.exports.routes = {
   'GET /perguntas/edit/:id':
         { action: "perguntas/edit" },
   
-<<<<<<< HEAD
 
-
-=======
-  
->>>>>>> cf90a0cafac3fa92406b5daddab24f9255a7ee0d
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
