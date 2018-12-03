@@ -23,10 +23,15 @@ module.exports = {
       type: "number",
       required: true
     },
-    resultado_id: {
+    //resultado_id: {
+      //type: "number",
+      //required: true
+    //}
+     usuario_id: {
       type: "number",
       required: true
     }
+
 
 
 

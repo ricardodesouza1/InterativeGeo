@@ -2,7 +2,7 @@
 
 body{
    /*background-image: url("../imagens/geografiac.jpeg");*/
-    background-color: rgba(148, 170, 206, 0.5);
+    background-color: rgba(53, 130, 134, 0.2);
    
   
 }
@@ -12,10 +12,10 @@ p {
             }
 /*tela login*/
 #usuario{
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
      /*background-image:linear-gradient(#11B414,#133163);*/
-background-color: rgba(51, 20, 29, 0.4);
+background-color: rgba(51, 20, 29, 0.2);
  margin-top: 100px;
     font-size: 16pt;
     padding: 40px;
@@ -60,31 +60,31 @@ div{
     
 }
 .bt{
-    width: 180px;
-    height: 105px;
+    width: 120px;
+    height: 70px;
 }
 
 #esf{
     text-align: center;
 }
-#regiao{
+/*#regiao{
     background-image: url("../imagens/regioes.jpg");
 }
-/*tela região norte*/
+tela região norte*/ 
 #norte{
     
-    background-image: url("../imagens/relevob.jpg");
+  /*  background-image: url("../imagens/relevob.jpg"); */
 }
 #nor{
     
-     width: 700px;
-    height: 600px;
+     width: 850px;
+    height: 700px;
     margin: auto;
     font-size: 14pt;
     padding: 40px;
     background-image:linear-gradient(#11B414,#133163);
     box-shadow: 3px 3px 3px 3px black;
-    background: rgba(162, 205, 90, 0.9);
+    background: rgba(162, 205, 90, 0.3);
         
 }
 .legenda{
@@ -93,22 +93,33 @@ div{
     font-size: 10pt;
 }
 #norteClima{
-    background-image: url("../imagens/clima1.jpg");
+  /*   background-image: url("../imagens/clima1.jpg");*/
 }
 #nortevegetacao{
-     background-image: url("../imagens/vegetavv.jpg");
+  /*    background-image: url("../imagens/vegetavv.jpg");*/
 }
 #nortees{
-    background-image: url("../imagens/regiao_nortees.jpg");
+   /* background-image: url("../imagens/regiao_nortees.jpg");*/
 }
 /*Questionário da aplicação*/
 #questionario{
-    width: 700px;
+    
+     width: 850px;
+    height: 700px;
+    margin: auto;
+    font-size: 14pt;
+    padding: 40px;
+    background-image:linear-gradient(#11B414,#133163);
+    box-shadow: 3px 3px 3px 3px black;
+    background: rgba(162, 205, 90, 0.3);
+
+    
+    /*width: 700px;
     height: 600px;
     border: solid;
     border-color: black;
     margin-top: 3%;
-    margin-left: 25%;
+    margin-left: 25%;*/
 }
 h1{
     text-align-last: center;
@@ -138,4 +149,33 @@ h1{
     ::-webkit-scrollbar-thumb:hover {
         background: #5d5e60;
     }
+}
+
+
+#inicio{
+    width: 500px;
+    height: 500px
+    background-color: ;
+    margin-top: 7%;
+    margin-right: 13%;
+
+
+    
+}
+#inic{
+    background: white;
+}
+#cabecalho{
+    background: rgba(0, 0, 0, 0.9);
+    height: 45px;
+}
+#nomec{
+    height: 50px;
+}
+#botaoca{
+
+    margin-top: 20px;
+}
+.btn{
+    margin-left: 200px;
 }

@@ -21,6 +21,11 @@ module.exports = {
       required:true
 
     },
+    usuario_id: {
+      type: "number",
+      required: true
+    }
+
     
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

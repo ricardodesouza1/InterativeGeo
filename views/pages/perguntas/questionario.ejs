@@ -1,25 +1,52 @@
 
+<header id="cabecalho"  class="navbar-nav flex-row" >
+	<a class="navbar-brand mr-0" href="logo" id="nomec">INTERATIVEGEO</a>
+	
+	<center><a class="btn btn-outline-info" href="telaInicial">Inicio</a>
+          <a class="btn btn-outline-info" href="login">Usuário</a>
+         <a class="btn btn-outline-info" href="opcaoEstudo">Conteúdos</a> </center>
 
+	
+</header>
   <div id="questionario" class="rolagem" >
 <h1>Perguntas região Norte</h1>
 
+
+<form action="/perguntas/saveg" method="POST">
   <% for (a = 0; a< perguntas.length; a++) { %>
    
-    <p><%= a+1; %>.<%= perguntas[a].perguntas %>  </p>
     
-    <p>A:<%= perguntas[a].alternativaA %> </p>
-     
-    <p>B:<%= perguntas[a].alternativaB %> </p>
-     
-    <p>C:<%= perguntas[a].alternativaC %> </p>
-      
-    <p>D:<%= perguntas[a].alternativaD %> </p>
+
+  
+ 
+    <fieldset id="perguntas"><legend><%= a+1; %>.<%= perguntas[a].perguntas %> </legend>
+
+    <input type="hidden" name="pergunta[<%= a %>]" value="<%= perguntas[a].id_usuario %>" />
+    <input type="hidden" name="pergunta[<%= a %>]" value="<%= perguntas[a].id %>" />
+
+
+    <input type="radio" name="resposta[<%= a %>]" id="alt_a" value="a"/>
+    <label for="a">A:<%= perguntas[a].alternativaA %></label>
+    <br/>
+    <input type="radio" name="resposta[<%= a %>]" id="alt_b" value="b"/>
+    <label for="b">B:<%= perguntas[a].alternativaB %></label>
+
+    <br/>
+    <input type="radio" name="resposta[<%= a %>]" id="alt_c" value="c"/>
+    <label for="c">C:<%= perguntas[a].alternativaC %></label>
+    <br/>
+    <input type="radio" name="resposta[<%= a %>]" id="alt_d" value="d"/>
+    <label for="d">D:<%= perguntas[a].alternativaD %></label>
       <br/><br/>
-    
-      
+ 
+   </fieldset>
+ 
+  <% } %>
+<input type="submit" value="Salvar"/>
+  
+  </form>
    
   
-  <% } %>
 
  </div>
 

@@ -59,10 +59,49 @@ module.exports.routes = {
   'GET /perguntas/edit/:id':
         { action: "perguntas/edit" },
 
-  'GET /perguntas/questionario':
-        { action: "perguntas/questionario"},
+
   'GET /perguntas/login':
         { action: "perguntas/login"},
+  'POST /perguntas/saveu':
+        { action: "perguntas/saveuOrUpdate"},
+  'GET /perguntas/nome':
+        { action: "perguntas/nome"},
+
+
+  'GET /perguntas/questionario':
+        { action: "perguntas/questionario"},
+  'POST /perguntas/saveg':
+        { action: "perguntas/savegOrUpdate"},
+
+  
+
+
+
+// páginas estatiicas
+  'GET /perguntas/logo':
+        { action: "perguntas/logo"},
+  'GET /perguntas/telaInicial':
+        { action: "perguntas/telaInicial"},
+  'GET /perguntas/opcaoEstudo':
+        { action: "perguntas/opcaoEstudo"},
+
+
+  // conteúdos
+
+  'GET /perguntas/regiaoNorteClima':
+        { action: "perguntas/regiaoNorteClima"},
+  'GET /perguntas/regiaoNorteEstados':
+        { action: "perguntas/regiaoNorteEstados"},
+  'GET /perguntas/regiaoNorteRelevo':
+        { action: "perguntas/regiaoNorteRelevo"},
+  'GET /perguntas/regiaoNorteRelevo1':
+        { action: "perguntas/regiaoNorteRelevo1"},
+  'GET /perguntas/regiaoNorteRelevo2':
+        { action: "perguntas/regiaoNorteRelevo2"},
+  'GET /perguntas/regiaoNorteVegetacao':
+        { action: "perguntas/regiaoNorteVegetacao"},
+
+  
   
   
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗

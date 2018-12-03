@@ -8071,7 +8071,7 @@ button.bg-dark:focus {
     margin-top: 3rem !important;
   }
   .mr-md-5,
-  .mx-md-5 {
+  .mx-md-5 {header
     margin-right: 3rem !important;
   }
   .mb-md-5,
@@ -8560,7 +8560,7 @@ button.bg-dark:focus {
     margin-bottom: 1.5rem !important;
   }
   .ml-xl-4,
-  .mx-xl-4 {
+  .mx-xl-4 {header
     margin-left: 1.5rem !important;
   }
   .m-xl-5 {
@@ -8597,7 +8597,7 @@ button.bg-dark:focus {
   .py-xl-0 {
     padding-bottom: 0 !important;
   }
-  .pl-xl-0,
+  .pl-xl-0,header
   .px-xl-0 {
     padding-left: 0 !important;
   }
@@ -8625,7 +8625,7 @@ button.bg-dark:focus {
   }
   .pt-xl-2,
   .py-xl-2 {
-    padding-top: 0.5rem !important;
+    padding-top: 0.5rem !important;header
   }
   .pr-xl-2,
   .px-xl-2 {
@@ -8731,7 +8731,7 @@ button.bg-dark:focus {
   white-space: nowrap;
 }
 
-.text-left {
+.text-left {header
   text-align: left !important;
 }
 
