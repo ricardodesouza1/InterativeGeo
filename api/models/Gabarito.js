@@ -14,7 +14,7 @@ module.exports = {
     gabarito: {
        type:"string",
        required:true,
-       minLength: 2,
+       minLength: 1,
        maxLength: 255
 
 

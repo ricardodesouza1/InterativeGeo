@@ -15,12 +15,13 @@ module.exports = {
         });
     });
   },
-  questionario: function(req, res) {
+  questionario: async function(req, res) {
+    var resultado = await Resultado.create({usuario_id:1});
     Perguntas.find().then(function(data) {
       res.view("pages/perguntas/questionario",
         {
           notice: req.param("notice"),
-          perguntas: data
+          perguntas: data, resultado: resultado
         });
     });
   },
@@ -164,49 +165,42 @@ module.exports = {
   },
  //pega resposta do usuário e insere no gabatio
 
- savegOrUpdate: function(req, res) {
-    var pkid = parseInt(req.param("id_gabarito"));  // mudaça de id para id_usuario
+ savegOrUpdate: async function(req, res) {
     var pergunta = req.param("pergunta");
-    var resposta = req.param("resposta");
-    var resposta = req.param("usuario");
+    var respostas = req.param("resposta");
+    var usuario = req.param("usuario_id");
+    var resultado = req.param("resultado_id");
+    console.log("perguntas", pergunta.length);
+    
     for (i = 0; i < pergunta.length; i++) {
-      var resposta = resposta[i];
+      var resposta = respostas[i];
       var perguntaId = pergunta[i];
-      var usuarioId = usuario[i];
       var model = {
-        gabarito: resposta,
+        gabarito: resposta || "-",
         pergunta_id: perguntaId,
-        usuario_id: usuarioId
+        usuario_id: usuario
+
       };
-      if (pkid > 0) {
-        Gabarito.update({
-            id_gabarito: pkid    // mudaça de id para id_usuario
-          }, model).exec(function(err, newmodel) {
-            if (!err) {
-              res.redirect(
-                "/perguntas?notice=Salvo com sucessooooooooooogggg!"
-              );
-            } else { // Não Salvou!
-              res.redirect(
-                "/perguntas?notice=Erro!"
-              );
-            }
-        });
-      } else {
-        Gabarito.create(model).exec(function(err, newmodel) {
-          if (!err) { // Salvou!
-            console.log(newmodel);
-              res.redirect(
-                "/perguntas?notice=Salvo com sucessooooooooooooggggg!"
-              );
-          } else { // Não Salvou!
-              res.redirect(
-                "/perguntas?notice=Erro!"+err
-              );
-          }
-        });
-      }
+      var newmodel = await Gabarito.create(model);  
     }
+    var acertos = 0;
+    var erros = 0;
+    for(i = 0; i< pergunta.length; i++){
+      if (pergunta[i].resposta == respostas[i]){
+        acertos=acertos+1
+        }else{
+        erros=erros+1
+        }
+        
+      };
+       var model = {
+           nacertos: acertos,
+           nerros: erros
+         };
+         var newmodel = await Resultado.create(model);
+    res.redirect(
+      "/perguntas?notice=Salvo com sucessooooooooooooggggg!"
+    );
   },
 
   // Excluir perguntas que foram cadastradas erradas

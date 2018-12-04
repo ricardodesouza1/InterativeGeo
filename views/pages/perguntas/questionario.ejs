@@ -2,17 +2,20 @@
 <header id="cabecalho"  class="navbar-nav flex-row" >
 	<a class="navbar-brand mr-0" href="logo" id="nomec">INTERATIVEGEO</a>
 	
-	<center><a class="btn btn-outline-info" href="telaInicial">Inicio</a>
-          <a class="btn btn-outline-info" href="login">Usuário</a>
+	<center><a class="btn btn-outline-info" href="login">Inicio</a>
+          <a class="btn btn-outline-info" href="telaInicial">Regiões</a>
          <a class="btn btn-outline-info" href="opcaoEstudo">Conteúdos</a> </center>
 
 	
 </header>
   <div id="questionario" class="rolagem" >
 <h1>Perguntas região Norte</h1>
-
+</br></br>
 
 <form action="/perguntas/saveg" method="POST">
+<input type="hidden" name="usuario_id" value="1" />
+<input type="hidden" name="resultado_id" value="1" />
+
   <% for (a = 0; a< perguntas.length; a++) { %>
    
     
@@ -20,10 +23,8 @@
   
  
     <fieldset id="perguntas"><legend><%= a+1; %>.<%= perguntas[a].perguntas %> </legend>
-
-    <input type="hidden" name="pergunta[<%= a %>]" value="<%= perguntas[a].id_usuario %>" />
+    
     <input type="hidden" name="pergunta[<%= a %>]" value="<%= perguntas[a].id %>" />
-
 
     <input type="radio" name="resposta[<%= a %>]" id="alt_a" value="a"/>
     <label for="a">A:<%= perguntas[a].alternativaA %></label>
@@ -42,7 +43,7 @@
    </fieldset>
  
   <% } %>
-<input type="submit" value="Salvar"/>
+<center><input type="submit" value="Verificar"/></center>
   
   </form>
    

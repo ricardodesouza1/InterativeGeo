@@ -13,17 +13,17 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     nacertos: {
       type:"number", 
-      required:true
+      defaultsTo: 0
 
     },
     nerros: {
       type:"number", 
-      required:true
+      defaultsTo: 0
 
     },
     usuario_id: {
       type: "number",
-      required: true
+     // required: true
     }
 
     
