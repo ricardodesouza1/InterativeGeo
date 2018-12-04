@@ -186,20 +186,25 @@ module.exports = {
     var acertos = 0;
     var erros = 0;
     for(i = 0; i< pergunta.length; i++){
-      if (pergunta[i].resposta == respostas[i]){
+      var p = await Perguntas.findOne({
+            id: pergunta[i]
+        });
+      console.log("resposta/gabarito", p.resposta, respostas[i] );
+      if (p.resposta == respostas[i]){
         acertos=acertos+1
         }else{
         erros=erros+1
         }
         
       };
+      console.log("acertos/erros", acertos, erros);
        var model = {
            nacertos: acertos,
            nerros: erros
          };
-         var newmodel = await Resultado.create(model);
+         var newmodel = await Resultado.update({id:resultado},model);
     res.redirect(
-      "/perguntas?notice=Salvo com sucessooooooooooooggggg!"
+      "/resultado?id="+resultado                                   
     );
   },
 
