@@ -59,11 +59,17 @@ module.exports = {
   regiaoNorteRelevo1: function(req, res) {
     res.view("pages/perguntas/regiaoNorteRelevo1");
   },
+  regiaoNorteRelevov: function(req, res) {
+    res.view("pages/perguntas/regiaoNorteRelevov");
+  },
   regiaoNorteRelevo2: function(req, res) {
     res.view("pages/perguntas/regiaoNorteRelevo2");
   },
   regiaoNorteVegetacao: function(req, res) {
     res.view("pages/perguntas/regiaoNorteVegetacao");
+  },
+  resultado: function(req, res) {
+    res.view("pages/perguntas/resultado");
   },
 
   // ------------------------------------------
@@ -202,8 +208,10 @@ module.exports = {
            nacertos: acertos,
            nerros: erros
          };
-         var newmodel = await Resultado.update({id:resultado},model);
+
+          var newmodel = await Resultado.create({id:resultado},model);
     res.redirect(
+     // "/perguntas/resultado"
       "/resultado?id="+resultado                                   
     );
   },

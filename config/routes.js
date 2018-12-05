@@ -96,10 +96,15 @@ module.exports.routes = {
         { action: "perguntas/regiaoNorteRelevo"},
   'GET /perguntas/regiaoNorteRelevo1':
         { action: "perguntas/regiaoNorteRelevo1"},
+  'GET /perguntas/regiaoNorteRelevov':
+        { action: "perguntas/regiaoNorteRelevov"},
   'GET /perguntas/regiaoNorteRelevo2':
         { action: "perguntas/regiaoNorteRelevo2"},
   'GET /perguntas/regiaoNorteVegetacao':
         { action: "perguntas/regiaoNorteVegetacao"},
+
+  'GET /perguntas/resultado':
+        { action: "perguntas/resultado"},
 
   
   

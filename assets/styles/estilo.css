@@ -52,7 +52,9 @@ div{
 #opcoes{
      width: 750px;
     height: 500px;
-    background-image:linear-gradient(#11B414,#133163);
+   background-image:linear-gradient( rgba(0, 0, 0, 0.6), #11B414,#133163);
+    box-shadow: 0px 200px rgba(0, 0, 0, 0.4) inset;
+  /* background-color: rgba(53, 130, 134, 0.4); */
     margin-top: 70px;
     font-size: 12pt;
     padding: 40px;
@@ -68,8 +70,8 @@ div{
     height: 120px;
 }
 .bt_conteudos{
-    width: 180px;
-    height: 120px;
+    width: 170px;
+    height: 100px;
 }
 .bt_iniciar{
     width: 120px;
@@ -201,4 +203,7 @@ h1{
 }
 .btn{
     margin-left: 200px;
+}
+#certo{
+    background: green;
 }
