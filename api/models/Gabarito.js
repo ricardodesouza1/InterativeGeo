@@ -14,7 +14,7 @@ module.exports = {
     gabarito: {
        type:"string",
        required:true,
-       minLength: 2,
+       minLength: 1,
        maxLength: 255
 
 
@@ -23,10 +23,15 @@ module.exports = {
       type: "number",
       required: true
     },
-    resultado_id: {
+    //resultado_id: {
+      //type: "number",
+      //required: true
+    //}
+     usuario_id: {
       type: "number",
       required: true
     }
+
 
 
 

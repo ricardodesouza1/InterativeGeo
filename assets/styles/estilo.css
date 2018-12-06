@@ -2,7 +2,11 @@
 
 body{
    /*background-image: url("../imagens/geografiac.jpeg");*/
+<<<<<<< HEAD
     /*background-color:   #F0F8FF;*/
+=======
+    background-color: rgba(53, 130, 134, 0.2);
+>>>>>>> 8219e88266f6b7488496f6afe673d22af6b54f11
    
   
 }
@@ -12,10 +16,14 @@ p {
             }
 /*tela login*/
 #usuario{
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
      /*background-image:linear-gradient(#11B414,#133163);*/
+<<<<<<< HEAD
 background-color: rgba(0,191,255,0.6);
+=======
+background-color: rgba(51, 20, 29, 0.2);
+>>>>>>> 8219e88266f6b7488496f6afe673d22af6b54f11
  margin-top: 100px;
     font-size: 16pt;
     padding: 40px;
@@ -47,9 +55,11 @@ div{
 }
 /*tela inicial*/
 #opcoes{
-     width: 650px;
-    height: 400px;
-    background-image:linear-gradient(#11B414,#133163);
+     width: 750px;
+    height: 500px;
+   background-image:linear-gradient( rgba(0, 0, 0, 0.6), #11B414,#133163);
+    box-shadow: 0px 200px rgba(0, 0, 0, 0.4) inset;
+  /* background-color: rgba(53, 130, 134, 0.4); */
     margin-top: 70px;
     font-size: 12pt;
     padding: 40px;
@@ -57,31 +67,54 @@ div{
     
 }
 .bt{
-    width: 180px;
-    height: 105px;
+    width: 120px;
+    height: 70px;
+}
+.bt_login{
+    width: 120px;
+    height: 120px;
+}
+.bt_conteudos{
+    width: 170px;
+    height: 100px;
+}
+.bt_iniciar{
+    width: 120px;
+    height: 60px;
+}
+.bt_mudar{
+    width: 120px;
+    height: 60px;
+    margin-left: 400px;
+}
+.bt_voltar{
+    width: 120px;
+    height: 60px;
+    margin-right: 400px;
+    margin-bottom: -66px;
 }
 
 #esf{
     text-align: center;
 }
-#regiao{
+/*#regiao{
     background-image: url("../imagens/regioes.jpg");
 }
-/*tela região norte*/
+tela região norte*/ 
 #norte{
     
-    background-image: url("../imagens/relevob.jpg");
+  /*  background-image: url("../imagens/relevob.jpg"); */
 }
 #nor{
     
-     width: 700px;
-    height: 600px;
+     width: 850px;
+    height: 620px;
     margin: auto;
     font-size: 14pt;
     padding: 40px;
     background-image:linear-gradient(#11B414,#133163);
     box-shadow: 3px 3px 3px 3px black;
-    background: rgba(162, 205, 90, 0.9);
+    background: rgba(162, 205, 90, 0.3);
         
 }
 .legenda{
@@ -90,22 +123,33 @@ div{
     font-size: 10pt;
 }
 #norteClima{
-    background-image: url("../imagens/clima1.jpg");
+  /*   background-image: url("../imagens/clima1.jpg");*/
 }
 #nortevegetacao{
-     background-image: url("../imagens/vegetavv.jpg");
+  /*    background-image: url("../imagens/vegetavv.jpg");*/
 }
 #nortees{
-    background-image: url("../imagens/regiao_nortees.jpg");
+   /* background-image: url("../imagens/regiao_nortees.jpg");*/
 }
 /*Questionário da aplicação*/
 #questionario{
-    width: 700px;
+    
+     width: 850px;
+    height: 620px;
+    margin: auto;
+    font-size: 14pt;
+    padding: 40px;
+    background-image:linear-gradient(#11B414,#133163);
+    box-shadow: 3px 3px 3px 3px black;
+    background: rgba(162, 205, 90, 0.3);
+
+    
+    /*width: 700px;
     height: 600px;
     border: solid;
     border-color: black;
     margin-top: 3%;
-    margin-left: 25%;
+    margin-left: 25%;*/
 }
 h1{
     text-align-last: center;
@@ -135,4 +179,36 @@ h1{
     ::-webkit-scrollbar-thumb:hover {
         background: #5d5e60;
     }
+}
+
+
+#inicio{
+    width: 500px;
+    height: 500px
+    background-color: ;
+    margin-top: 7%;
+    margin-right: 13%;
+
+
+    
+}
+#inic{
+    background: white;
+}
+#cabecalho{
+    background: rgba(0, 0, 0, 0.9);
+    height: 45px;
+}
+#nomec{
+    height: 50px;
+}
+#botaoca{
+
+    margin-top: 20px;
+}
+.btn{
+    margin-left: 200px;
+}
+#certo{
+    background: green;
 }

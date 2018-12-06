@@ -1,26 +1,33 @@
-<!-- <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Este é o arquivo
+./views/pages/peguntas/login.ejs
 -->
-<!--
+<!DOCTYPE html>
+
     <head>  
         <title>Usuário</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles/estilo.css"/>
-    </head> 
-    <body>  -->
+       
+    </head>
+    <header id="cabecalho"  class="navbar-nav flex-row" >
+    <a class="navbar-brand mr-0" href="logo" id="nomec">INTERATIVEGEO</a>
+    
+   <center><a class="btn btn-outline-info" href="login">Inicio</a>
+          <a class="btn btn-outline-info" href="telaInicial">Regiões</a>
+         <a class="btn btn-outline-info" href="opcaoEstudo">Conteúdos</a> </center>
+
+    
+</header> 
+    <body>  
       <center>  <div id="usuario">
-            <h1 id="nomet">Informe seu Nome</h1>
-            <form action="telaInicial.html">
+            <img src="../imagens/login.png" class="bt_login" />
+
+            <form action="/perguntas/saveu" method="POST">
                 <input type="text" name="nome" id="nome" maxlength="100" placeholder="Nome de Usário"/>
                 <br><br>
-                <input type="image" name="tEnviar" src="imagens/Iniciar.png"/>
+               <a src="telaInicial.html" > <input type="image" src="../imagens/Iniciar.png" class="bt_iniciar"/> </a>
             </form> </center>
             
             
         </div>
-   <!-- </body>
-</html>  -->
+   </body>
+</html>  
